@@ -1,10 +1,11 @@
 // ==UserScript==
-// @name         Kolejnoœæ w menu - ver 2.
+// @name         KolejnoÅ›Ä‡ w menu - ver 2.
 // @namespace    http://tampermonkey.net/
 // @version      0.2
-// @description  Przestawia kolejnoœæ w menu w LD
+// @description  Przestawia kolejnoÅ›Ä‡ w menu w LD
 // @author       RShT
 // @match        https://servicedesk.net.pp/SD_Operator.WebAccess/wd/*
+// @match        https://servicedesk.net.pp/SD_Klient.WebAccess/wd/*
 // ==/UserScript==
 
 function swap(theArray, index1, index2) {
@@ -23,22 +24,26 @@ for (var i in items) {
 }
 
 itemsArr[0].style.display = 'none';
+itemsArr[1].style.display = 'none';
 itemsArr[6].style.display = 'none';
+itemsArr[7].style.display = 'none';
+itemsArr[8].style.display = 'none';
+itemsArr[9].style.display = 'none';
+itemsArr[10].style.display = 'none';
 itemsArr[11].style.display = 'none';
-itemsArr[12].style.display = 'none';
 itemsArr[17].style.display = 'none';
 
 //             X  Y    // x = stara pozycja, y = nowa pozycja w menu
-swap(itemsArr, 0, 1);
-swap(itemsArr, 1, 10);
-swap(itemsArr, 4, 15);
-swap(itemsArr, 5, 13);
-swap(itemsArr, 6, 15);
-swap(itemsArr, 7, 16);
-swap(itemsArr, 8, 17);
-swap(itemsArr, 8, 14);
-swap(itemsArr, 10, 14);
+//swap(itemsArr, 0, 1);
+//swap(itemsArr, 1, 10);
+//swap(itemsArr, 4, 15);
+//swap(itemsArr, 5, 13);
+//swap(itemsArr, 6, 15);
+//swap(itemsArr, 7, 16);
+//swap(itemsArr, 8, 17);
+//swap(itemsArr, 8, 14);
+//swap(itemsArr, 10, 14);
 
-for (i = 0; i < itemsArr.length; ++i) {
-  list.appendChild(itemsArr[i]);
-}
+//for (i = 0; i < itemsArr.length; ++i) {
+//  list.appendChild(itemsArr[i]);
+//}
